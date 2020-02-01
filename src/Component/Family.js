@@ -5,7 +5,7 @@ class Family extends Component {
     render() {
         return (
             <div>
-                <Son nata={this.props.kata}></Son>
+                <Son></Son>
             </div>
         );
     }
