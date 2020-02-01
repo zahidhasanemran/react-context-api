@@ -8,9 +8,17 @@ class MyProvider extends Component {
         this.state = {
             name: 'Emran',
             age: 25,
-            job: 'Developer'
+            job: 'Developer',
+            gorw: () => this.setState({
+                age: this.state.age + 1
+            })
+
         }
+
     }
+
+    
+
     render() {
         return (
             <MyContext.Provider value={{state: this.state}}>

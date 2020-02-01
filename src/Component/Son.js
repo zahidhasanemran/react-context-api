@@ -10,6 +10,8 @@ class Son extends Component {
                         <h2>Hello i'm {contextVal.state.name} </h2>
                         <p>He is {contextVal.state.age} year old </p>
                         <p>He is  {contextVal.state.job} </p>
+
+                        <button onClick={contextVal.state.gorw}> Cake + </button>
                         
                     </div>
                 )}
