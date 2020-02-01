@@ -6,7 +6,12 @@ class Son extends Component {
         return (
             <MyConsumer>
                 {(contextVal) => (
-                    <h2>Hello i'm {contextVal} </h2>
+                    <div>
+                        <h2>Hello i'm {contextVal.state.name} </h2>
+                        <p>He is {contextVal.state.age} year old </p>
+                        <p>He is  {contextVal.state.job} </p>
+                        
+                    </div>
                 )}
             </MyConsumer>
         );

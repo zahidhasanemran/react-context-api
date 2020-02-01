@@ -13,7 +13,7 @@ class MyProvider extends Component {
     }
     render() {
         return (
-            <MyContext.Provider value="Zahid">
+            <MyContext.Provider value={{state: this.state}}>
                 {this.props.children}
             </MyContext.Provider>
         );
